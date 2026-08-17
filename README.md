@@ -1,52 +1,112 @@
-# OpenClassrooms_P4_POO_Tournoi_Echecs
+# Chess-Tournament-Manager
 
-## Documentation
-### Description
+## Description
 
-Ce programme est une application Python hors ligne pour la gestion des tournois d'échecs. Il permet d'ajouter des joueurs, de gérer des tournois, de générer des paires dynamiques basées sur les résultats des matchs, et de produire des rapports détaillés. Les données sont sauvegardées et chargées à l'aide de fichiers JSON.
-### Fonctionnalités
+This program is an offline Python application for managing chess
+tournaments. It allows users to add players, manage tournaments,
+generate dynamic pairings based on match results, and produce detailed
+reports.
 
-    Gestion des joueurs : Ajout de joueurs avec nom, prénom, genre et date de naissance.
-    Gestion des tournois : Création de tournois, gestion des tours et des matchs.
-    Rapports : Génération de listes de joueurs, tournois, tours, et matchs.
-    Interface utilisateur : Menu interactif basé sur la console.
+Data is saved and loaded using JSON files.
 
-### Prérequis
+------------------------------------------------------------------------
 
-    Python 3.8 ou supérieur
-    Installer les dépendances (facultatif) avec : pip install -r requirements.txt
+## Features
 
-### Utilisation
+-   **Player Management:** Add players with their last name, first name,
+    gender, and date of birth
+-   **Tournament Management:** Create tournaments and manage rounds and
+    matches
+-   **Reports:** Generate lists of players, tournaments, rounds, and
+    matches
+-   **User Interface:** Interactive console-based menu
 
-Lancez la console, placez-vous dans le dossier de votre choix et clonez le dépôt :
+------------------------------------------------------------------------
 
-    git clone https://github.com/mouquettom/OpenClassrooms_P4_POO_Club_Echecs.git
+## Prerequisites
 
-Allez dans le dossier OPC_P4_Tournoi_Echecs, puis créez un nouvel environnement virtuel :
+-   Python 3.8 or later
+-   Dependencies can optionally be installed with:
 
-    python -m venv env.
+``` bash
+pip install -r requirements.txt
+```
 
-Ensuite, activez-le.
-#### Windows:
+------------------------------------------------------------------------
 
-    env\scripts\activate.bat
+## Installation and Usage
 
-#### Linux:
+### 1. Clone the Repository
 
-    source env/bin/activate
+Open a terminal, navigate to the directory of your choice, and clone the
+repository:
 
-Vous pouvez dorénavant exécuter le programme depuis le terminal :
+``` bash
+git clone https://github.com/mouquettom/chess-tournament-manager.git
+cd chess-tournament-manager
+```
 
-    python3 main.py
+### 2. Create a Virtual Environment
 
-### Conformité PEP 8
+``` bash
+python -m venv env
+```
 
-Rapport HTML généré par flake8 disponible dans le dossier rapport_flake8.
-Structure MVC
+### 3. Activate the Virtual Environment
 
-Le projet suit l'architecture MVC, qui sépare les responsabilités en trois couches : le Modèle gère les données et la logique métier, la Vue affiche les données et interagit avec l'utilisateur, et le Contrôleur fait le lien entre les deux, en traitant les actions utilisateur et en mettant à jour les données ou l'affichage en conséquence.
+#### Windows
 
-    models.py : Définit les classes principales (Joueur, Match, Tournoi).
-    views.py : Gère les interactions utilisateur (affichage, saisie).
-    controllers.py : Contient la logique métier (création d'un tournoi, ajout de joueurs).
-    main.py : Point d'entrée du programme.
+``` bash
+env\scripts\activate.bat
+```
+
+#### macOS / Linux
+
+``` bash
+source env/bin/activate
+```
+
+### 4. Run the Application
+
+You can now run the program from the terminal:
+
+``` bash
+python3 main.py
+```
+
+------------------------------------------------------------------------
+
+## PEP 8 Compliance
+
+An HTML report generated with Flake8 is available in the
+`rapport_flake8` directory.
+
+------------------------------------------------------------------------
+
+## MVC Architecture
+
+The project follows the MVC architecture, which separates
+responsibilities into three layers:
+
+-   **Model:** manages data and business logic
+-   **View:** displays data and handles user interactions
+-   **Controller:** connects the Model and the View by processing user
+    actions and updating the data or interface accordingly
+
+### Main Files
+
+-   `models.py`: defines the main classes (`Player`, `Match`,
+    `Tournament`)
+-   `views.py`: handles user interactions, including display and input
+-   `controllers.py`: contains the business logic, such as tournament
+    creation and player management
+-   `main.py`: application entry point
+
+------------------------------------------------------------------------
+
+## Author
+
+@tom_mouquet
+
+Project developed as part of the OpenClassrooms **Développeur
+d'application Python** training program.
