@@ -1,0 +1,4 @@
+# L'application n'utilise que la bibliothèque standard de Python.
+# Ces paquets servent uniquement au contrôle PEP 8 et au rapport HTML flake8.
+flake8>=7.0
+flake8-html>=0.4.3
