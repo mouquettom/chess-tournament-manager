@@ -1,3 +1,15 @@
-.idea/
-.venv/*
+# Environnements virtuels
+env/
+venv/
+.venv/
+
+# Fichiers Python compilés
 __pycache__/
+*.py[cod]
+
+# Configuration des IDE
+.idea/
+.vscode/
+
+# Données générées par l'application
+data/
